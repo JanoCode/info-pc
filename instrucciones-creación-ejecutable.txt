@@ -1,0 +1,16 @@
+Instrucciones para crear el .exe para el ejecutable. 
+
+
+1-Abrir powershell donde se encuentra el archivo infoEquipo.py
+2-Ejecutar el siguiente comando: "pyinstaller --onefile .\infoEquipo.py"
+3-Una vez terminado el proceso de creación del .exe, quedará una carpeta llamada dist, la cual contiene el ejecutable
+4-ejecutar el .exe
+
+
+Pasos siguientes: 
+
+Al ejecutar el .exe se generará un bloc de notas llamado datos_pc con los 5 datos solicitados los cuales son: Hostname, Dirección IP, MAC, Máscara de red y Número de serie.
+
+El txt con el nombre de datos_pc se ira actualizando por cada vez que se ejecute el .exe lo cual evita el trabajo de ir anotando manualmente en un papel.
+
+Una vez habiendo ejecutado el .exe en todos los pc de una sala, se cambia el nombre al txt por el nombre o numero de la sala y se saca de la carpeta en la cual se encuentra el .exe y se guarda en otro lado, esto hará que el programa vuelva a generar el txt datos_pc.txt con los datos de una nueva sala.
